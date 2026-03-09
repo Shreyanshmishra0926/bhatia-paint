@@ -833,7 +833,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="" alt="Bhatia Paint Store Front">
+                <img src="https://placehold.co/600x450/1e3a5f/ffffff?text=Bhatia+Paint+Store" alt="Bhatia Paint Store Front">
                 <div class="experience-tag">25+ Years of Trust</div>
             </div>
         </div>
@@ -848,7 +848,7 @@
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="" alt="Store Interior">
+                    <img src="https://placehold.co/600x400/2d3748/ffffff?text=Store+Interior" alt="Store Interior">
                 </div>
                 <div class="about-content">
                     <h3>Quality Paints, Trusted Service</h3>
@@ -899,7 +899,7 @@
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="" alt="Interior Paints">
+                        <img src="https://placehold.co/400x220/c9a227/1e3a5f?text=Interior+Paints" alt="Interior Paints">
                     </div>
                     <div class="product-info">
                         <h3>Interior Paints</h3>
@@ -914,7 +914,7 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="" alt="Exterior Paints">
+                        <img src="https://placehold.co/400x220/c9a227/1e3a5f?text=Exterior+Paints" alt="Exterior Paints">
                     </div>
                     <div class="product-info">
                         <h3>Exterior Paints</h3>
@@ -929,7 +929,7 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="" alt="Spray Paints">
+                        <img src="https://placehold.co/400x220/c9a227/1e3a5f?text=Spray+Paints+%26+Tools" alt="Spray Paints and Tools">
                     </div>
                     <div class="product-info">
                         <h3>Spray Paints & Tools</h3>
@@ -954,21 +954,21 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="" alt="Store Front">
+                    <img src="https://placehold.co/600x400/1e3a5f/ffffff?text=Store+Front" alt="Store Front">
                     <div class="gallery-overlay">
                         <h4>Store Front</h4>
                         <p>Easy to locate on Darshanpurwa main road</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt="Interior View">
+                    <img src="https://placehold.co/600x400/2d3748/ffffff?text=Interior+View" alt="Interior View">
                     <div class="gallery-overlay">
                         <h4>Spacious Interior</h4>
                         <p>Well-organized display of all products</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt="Owner">
+                    <img src="https://placehold.co/600x400/c9a227/1e3a5f?text=Expert+Team" alt="Owner and Team">
                     <div class="gallery-overlay">
                         <h4>Expert Team</h4>
                         <p>Personalized service and advice</p>
@@ -1153,6 +1153,16 @@
                 navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
             } else {
                 navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Reset nav-links display on window resize
+        window.addEventListener('resize', () => {
+            const navLinks = document.querySelector('.nav-links');
+            if (window.innerWidth > 968) {
+                navLinks.style.display = 'flex';
+            } else {
+                navLinks.style.display = 'none';
             }
         });
     </script>
